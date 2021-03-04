@@ -7,6 +7,7 @@ class AuthorsController < ApplicationController
   end
 
   def create
+
     @author = Author.new(author_params)
     # binding.pry
     if @author.valid?
